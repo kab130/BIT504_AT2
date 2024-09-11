@@ -17,8 +17,8 @@ public class Board {
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
+        
 				cells[row][col] = new Cell(row, col); //	Create Empty Cells
-
 			}
 		}
 	}
