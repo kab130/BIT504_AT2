@@ -7,17 +7,17 @@ public class Board {
 	public static final int GRID_WIDHT_HALF = GRID_WIDTH / 2;
 	
 	//2D array of ROWS-by-COLS Cell instances
-	Cell [][] cells;
+	Cell [][] cells=new Cell[GameMain.ROWS][GameMain.COLS];
 	
 	/** Constructor to create the game board */
 	public Board() {
 		
-	 //TODO: initialise the cells array using ROWS and COLS constants 
+	 //initialise the cells array using ROWS and COLS constants 
 
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
-				cells[row][col] = new Cell(row, col); //	Create Empty Cells
+				this.cells[row][col] = new Cell(row, col); //	Create Empty Cells
 
 			}
 		}
